@@ -1,0 +1,370 @@
+<html>
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-0J350BP7YE"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-0J350BP7YE'); -->
+    </script>
+
+    <meta charset="utf-8" />
+    <title>PhysWorld: Robot Learning from a Physical World Model</title>
+
+    <!-- Website Metadata -->
+    <meta content="PhysWorld: Robot Learning from a Physical World Model" name="description" />
+    <meta content="PhysWorld: Robot Learning from a Physical World Model" property="og:title" />
+    <meta content="PhysWorld: Robot Learning from a Physical World Model" property="og:description" />
+    <meta content="PhysWorld: Robot Learning from a Physical World Model" property="twitter:title" />
+    <meta content="PhysWorld: Robot Learning from a Physical World Model" property="twitter:description" />
+    <meta property="og:type" content="website" />
+    <meta content="summary_large_image" name="twitter:card" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous" />
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        WebFont.load({
+            google: {
+                families: [
+                    "Lato:100,100italic,300,300italic,400,400italic,700,700italic,900,900italic",
+                    "Montserrat:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic",
+                    "Ubuntu:300,300italic,400,400italic,500,500italic,700,700italic",
+                    "Open Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic",
+                    "Changa One:400,400italic",
+                    "Varela Round:400",
+                    "Bungee Shade:regular",
+                    "Roboto:300,regular,500",
+                    "Bungee Outline:regular"
+                ]
+            }
+        });
+    </script>
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons@latest/iconfont/tabler-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- External styles -->
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+    <!-- Section header style + larger pipeline image -->
+    <style>
+        .section-header {
+            font-family: 'Open Sans', sans-serif;
+            color: #333;
+            font-size: 32px;
+            line-height: 40px;
+            font-weight: 700;
+            letter-spacing: 0;
+            text-align: center;
+            margin-top: 40px;
+            margin-bottom: 10px;
+        }
+
+        /* Override default pipeline image size to make it larger and centered */
+        #pipeline-img {
+            width: 100%;
+            max-width: 800px;
+            display: block;
+            margin: 20px auto 0 auto;
+            border-radius: 15px;
+        }
+    </style>
+
+    <link href="data/favicon.jpg" rel="shortcut icon" type="image/x-icon" />
+</head>
+
+<body>
+    <div>
+        <!-- Title, Subtitle, Authors -->
+        <div>
+            <h1 class="title">
+                PhysWorld
+            </h1>
+            <div class="base-row">
+                <div style="padding: 2px;">
+                    <h1 class="subheader">
+                        Robot Learning from a Physical World Model
+                    </h1>
+                </div>
+            </div>
+
+            <!-- Author list -->
+            <div class="base-row">
+                <!-- Refer to how author wrapping is performed in https://brentyi.github.io/tilted/ -->
+                <div style="padding: 2px;">
+                    <a href="https://pointscoder.github.io/" target="_blank" class="author-text">
+                        Jiageng Mao
+                    </a>
+                    <div style="width: 1.25em; display: inline-block"></div>
+                    <a href="https://hesicheng.net/" target="_blank" class="author-text">
+                        Sicheng He
+                    </a>
+                    <div style="width: 1.25em; display: inline-block"></div>
+                    <a href="https://www.linkedin.com/in/haoningwu/" target="_blank" class="author-text">
+                        Hao-Ning Wu
+                    </a>
+                </div>
+                <div style="padding: 2px;">
+                    <div style="width: 1.25em; display: inline-block"></div>
+                    <a href="https://qq456cvb.github.io/" target="_blank" class="author-text">
+                        Yang You
+                    </a>
+                    <div style="width: 1.25em; display: inline-block"></div>
+                    <a href="https://scholar.google.com/citations?user=PoAvGRMAAAAJ&hl=en" target="_blank" class="author-text">
+                        Shuyang Sun
+                    </a>
+                    <div style="width: 1.25em; display: inline-block"></div>
+                    <a href="https://www.linkedin.com/in/zhicheng-wang-96116897/" target="_blank" class="author-text">
+                        Zhicheng Wang
+                    </a>
+                </div>
+                <div style="padding: 2px;">
+                    <div style="width: 1.25em; display: inline-block"></div>
+                    <a href="https://www.linkedin.com/in/yanan-bao-95676230/" target="_blank" class="author-text">
+                        Yanan Bao
+                    </a>
+                    <div style="width: 1.25em; display: inline-block"></div>
+                    <a href="https://huizhongchen.github.io/" target="_blank" class="author-text">
+                        Huizhong Chen
+                    </a>
+                    <div style="width: 1.25em; display: inline-block"></div>
+                    <a href="https://geometry.stanford.edu/" target="_blank" class="author-text">
+                        Leonidas Guibas
+                    </a>
+                </div>
+                <div style="padding: 2px;">
+                    <div style="width: 1.25em; display: inline-block"></div>
+                    <a href="https://vitorguizilini.github.io/" target="_blank" class="author-text">
+                        Vitor Guizilini
+                    </a>
+                    <div style="width: 1.25em; display: inline-block"></div>
+                    <a href="https://www.linkedin.com/in/howard-zhou-0a34b84/" target="_blank" class="author-text">
+                        Howard Zhou
+                    </a>
+                    <div style="width: 1.25em; display: inline-block"></div>
+                    <a href="https://yuewang.xyz/" target="_blank" class="author-text">
+                        Yue Wang
+                    </a>
+                </div>
+            </div>
+
+            <div style="text-align: center">
+                <h1 id="institution">
+                    <span>Google DeepMind</span> ·
+                    <span>USC</span> ·
+                    <span>Stanford</span> ·
+                    <span>Toyota Research Institute</span>
+                </h1>
+            </div>
+        </div>
+
+        <!-- Paper / code / data URLs -->
+        <div class="add-top-padding">
+            <div style="
+                    display: flex;
+                    justify-content: center;
+                    gap: 0.75em;
+                    flex-wrap: wrap;
+                ">
+                <a href="https://pointscoder.github.io/" target="_blank">
+                    <button>
+                        <i class="ti ti-article"></i>
+                        <span class="link-labels-text">Paper</span>
+                    </button>
+                </a>
+                <a href="https://github.com/PointsCoder/OpenReal2Sim" target="_blank">
+                    <button>
+                        <i class="ti ti-brand-github"></i>
+                        <span class="link-labels-text">OpenReal2Sim</span>
+                    </button>
+                </a>
+            </div>
+        </div>
+
+        <!-- TL;DR + Teaser video -->
+        <div class="section base-row add-top-padding">
+            <h1 class="tldr">
+                <b>TL;DR</b>:
+                PhysWorld unifies video generation and real-to-sim world modeling for zero-shot robotic manipulation.
+            </h1>
+            <video id="main-video" autobuffer muted autoplay loop controls>
+                <source id="mp4" src="data/teaser.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <!-- Method figure + description (after TL;DR) -->
+        <!-- <div class="section add-top-padding">
+            <img id="pipeline-img" src="data/method_v2.jpg" alt="PhysWorld method overview">
+            <p class="paragraph add-top-padding">
+                Given an RGB-D image and a task prompt, our framework (i) generates a task-conditioned video,
+                (ii) reconstructs a geometry-aligned 4D representation from the generated video,
+                (iii) generates textured object and background meshes,
+                (iv) assembles them into a physically interactable scene through property estimation, gravity alignment, and collision optimization,
+                (v) learns object-centric residual RL policies that transform visual demonstrations into feasible robotic actions,
+                and (vi) deploys the learned policies to the real world.
+            </p>
+        </div> -->
+
+        <!-- 1. From Video Generation to Robotic Manipulation -->
+        <div class="section add-top-padding">
+            <h1 class="section-header">
+                From Video Generation to Robotic Manipulation
+            </h1>
+
+            <!-- column headers -->
+            <div class="base-row" style="margin-top: 20px; margin-bottom: 10px;">
+                <div style="flex: 1; min-width: 280px;">
+                    <p class="paragraph-center"><b>Video Generation</b></p>
+                </div>
+                <div style="flex: 1; min-width: 280px;">
+                    <p class="paragraph-center"><b>Robotic Manipulation</b></p>
+                </div>
+            </div>
+
+            <!-- Book -->
+            <div class="base-row" style="margin-top: 10px;">
+                <div style="flex: 1; min-width: 280px; padding: 5px;">
+                    <video autobuffer muted autoplay loop controls style="width: 100%; border-radius: 15px;">
+                        <source src="data/book_gen.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div style="flex: 1; min-width: 280px; padding: 5px;">
+                    <video autobuffer muted autoplay loop controls style="width: 100%; border-radius: 15px;">
+                        <source src="data/book_real.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+
+            <!-- Fish -->
+            <div class="base-row" style="margin-top: 15px;">
+                <div style="flex: 1; min-width: 280px; padding: 5px;">
+                    <video autobuffer muted autoplay loop controls style="width: 100%; border-radius: 15px;">
+                        <source src="data/fish_gen.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div style="flex: 1; min-width: 280px; padding: 5px;">
+                    <video autobuffer muted autoplay loop controls style="width: 100%; border-radius: 15px;">
+                        <source src="data/fish_real.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+
+            <!-- Flower -->
+            <div class="base-row" style="margin-top: 15px;">
+                <div style="flex: 1; min-width: 280px; padding: 5px;">
+                    <video autobuffer muted autoplay loop controls style="width: 100%; border-radius: 15px;">
+                        <source src="data/flower_gen.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div style="flex: 1; min-width: 280px; padding: 5px;">
+                    <video autobuffer muted autoplay loop controls style="width: 100%; border-radius: 15px;">
+                        <source src="data/flower_real.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+
+            <!-- Lid -->
+            <div class="base-row" style="margin-top: 15px;">
+                <div style="flex: 1; min-width: 280px; padding: 5px;">
+                    <video autobuffer muted autoplay loop controls style="width: 100%; border-radius: 15px;">
+                        <source src="data/lid_gen.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div style="flex: 1; min-width: 280px; padding: 5px;">
+                    <video autobuffer muted autoplay loop controls style="width: 100%; border-radius: 15px;">
+                        <source src="data/lid_real.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+
+            <!-- Pan -->
+            <div class="base-row" style="margin-top: 15px;">
+                <div style="flex: 1; min-width: 280px; padding: 5px;">
+                    <video autobuffer muted autoplay loop controls style="width: 100%; border-radius: 15px;">
+                        <source src="data/pan_gen.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div style="flex: 1; min-width: 280px; padding: 5px;">
+                    <video autobuffer muted autoplay loop controls style="width: 100%; border-radius: 15px;">
+                        <source src="data/pan_real.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+
+            <!-- Shoe -->
+            <div class="base-row" style="margin-top: 15px;">
+                <div style="flex: 1; min-width: 280px; padding: 5px;">
+                    <video autobuffer muted autoplay loop controls style="width: 100%; border-radius: 15px;">
+                        <source src="data/shoe_gen.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div style="flex: 1; min-width: 280px; padding: 5px;">
+                    <video autobuffer muted autoplay loop controls style="width: 100%; border-radius: 15px;">
+                        <source src="data/shoe_real.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+
+            <!-- Spoon -->
+            <div class="base-row" style="margin-top: 15px;">
+                <div style="flex: 1; min-width: 280px; padding: 5px;">
+                    <video autobuffer muted autoplay loop controls style="width: 100%; border-radius: 15px;">
+                        <source src="data/spoon_gen.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div style="flex: 1; min-width: 280px; padding: 5px;">
+                    <video autobuffer muted autoplay loop controls style="width: 100%; border-radius: 15px;">
+                        <source src="data/spoon_real.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2. Real-to-Sim World Modeling from a Single Video -->
+        <div class="section add-top-padding">
+            <h1 class="section-header">
+                Real-to-Sim World Modeling from a Single Video
+            </h1>
+            <video autobuffer muted autoplay loop controls style="width: 100%; border-radius: 15px; margin-top: 10px;">
+                <source src="data/real2sim_assets.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <!-- 3. Learning with the Physical World Model -->
+        <div class="section add-top-padding">
+            <h1 class="section-header">
+                Learning with the Physical World Model
+            </h1>
+            <video autobuffer muted autoplay loop controls style="width: 100%; border-radius: 15px; margin-top: 10px;">
+                <source src="data/sim_speed8.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <!-- Citation -->
+        <div class="section add-top-padding" style="text-align: center;">
+            <h1 id="abstract">Citation</h1>
+            <div class="citation" style="text-align: left;">
+                <pre id="codecell0">
+@inproceedings{physworld,
+  title={Robot Learning from a Physical World Model},
+  author = {Mao, Jiageng and He, Sicheng and Wu, Hao-Ning and You, Yang and Sun, Shuyang and Wang, Zhicheng and Bao, Yanan and Chen, Huizhong and Guibas, Leonidas and Guizilini, Vitor and Zhou, Howard and Wang, Yue},
+  year={2025},
+}
+                </pre>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
